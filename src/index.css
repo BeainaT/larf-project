@@ -103,3 +103,11 @@ input[name=signup_password_field]:focus + div > .popover.active,
 .input-container:has(input[name=signup_password_field]:focus) {
     z-index: 20;
 }
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px #3a3a3a inset !important;
+    -webkit-text-fill-color: white;
+}
