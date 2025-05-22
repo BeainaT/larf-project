@@ -98,8 +98,8 @@ export default function BaseCard({toggleWiew, responseForm}: MyComponentProps) {
                     {isSigninView && <span className="text-base sm:text-lg text-end">SIGN<br/>UP</span>}
                     {!isSigninView && <span className="text-base sm:text-lg text-end">SIGN<br/>IN</span>}
                 </button>
-                <h2 className="text-2xl sm:text-4xl mt-5 mb-6 w-fit">{isSigninView ? 'SIGN IN' : 'SIGN UP'}</h2>
-                <form onSubmit={resForm} className={`flex flex-col justify-center gap-8 sm:gap-10 ${isSigninView ? 'h-[300px] sm:h-[400px]' : 'h-fit'}`}>
+                <h2 className="text-2xl sm:text-4xl mt-5 mb-8 w-fit">{isSigninView ? 'SIGN IN' : 'SIGN UP'}</h2>
+                <form onSubmit={resForm} className={`flex flex-col justify-center gap-8 ${isSigninView ? 'h-[300px] sm:h-[400px]' : 'h-fit'}`}>
                     {isSigninView &&
                     <>
                         <Input labelName="EMAIL" labelFor="signInEmail" inputType="text" inputName="signin_email_field" getInputValue={handleInputValue} isSentForm={isFormSubmitted} error={formErrors.signin_email_field}/>
@@ -114,7 +114,7 @@ export default function BaseCard({toggleWiew, responseForm}: MyComponentProps) {
                             <Input labelName="CONFIRM PASSWORD" labelFor="signUpPasswordCheck" inputType="password" inputName="signup_password_check_field" getInputValue={handleInputValue} isSentForm={isFormSubmitted} error={formErrors.signup_password_check_field}/>
                         </>
                     }
-                    <button type="submit" className="mt-4 border-1 border-[#ffffff80] active:border-white hover:border-white cursor-pointer px-6 py-1 rounded-md bg-zinc-800 mx-auto block w-full sm:w-fit text-lg sm:text-xl">{isSigninView ? 'SIGN IN' : 'SIGN UP'}</button>
+                    <button type="submit" className="mt-3 border-1 border-[#ffffff80] active:border-white hover:border-white cursor-pointer px-6 py-1 rounded-md bg-zinc-800 mx-auto block w-full sm:w-fit text-lg sm:text-xl self-end">{isSigninView ? 'SIGN IN' : 'SIGN UP'}</button>
                 </form>
             </div>
         </>

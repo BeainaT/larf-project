@@ -78,7 +78,7 @@ body {
         opacity: 1;
     }
 }
-input[name=signup_password_field]:focus + div > .popover,
+input[name=signup_password_field]:focus + div > .popover.active,
 #passwordInfo:hover + .popover {
     background: #242424;
     box-shadow: 0 4px 30px rgba(175, 174, 174, 0.1);
@@ -88,4 +88,13 @@ input[name=signup_password_field]:focus + div > .popover,
     border-radius: 8px;
     border-bottom-right-radius: 0;
     opacity: 1;
+}
+
+.input-container:has(input[name=signup_email_field]) 
+{
+    z-index: 10;
+}
+.input-container:has(.info-btn:hover),
+.input-container:has(input[name=signup_password_field]:focus) {
+    z-index: 20;
 }
