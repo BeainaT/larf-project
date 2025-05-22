@@ -15,10 +15,10 @@ function App() {
     }
     return (
         <>
-            <div className={`base-card-wrapper w-full h-[500px] sm:w-[460px] sm:h-[560px] mx-auto relative ${isSigninView && !isResponseCard ? '' : 'transform-pr'}`}>
+            <div className={`base-card-wrapper w-full h-[520px] sm:w-[460px] sm:h-[600px] mx-auto relative ${isSigninView && !isResponseCard ? '' : 'transform-pr'}`}>
                 <BaseCard toggleWiew={handleView} responseForm={handleResponse}/>
                 <div className={`response-card grid content-center text-center w-full h-full bg-zinc-800 border-1 border-white rounded-md -z-10 ${!isSigninView ? 'rotate-y-180' : '-rotate-y-180'} ${isResponseCard ? `rotate-x-360 transition-transform duration-1000 delay-600` : 'rotate-x-270'}`}>
-                    <h2 className='text-5xl'>{isSigninView ? 'WELCOME' : 'Thanks for signed up'}</h2>
+                    <h2 className={` text-5xl sm:text-7xl uppercase`}>{isSigninView ? 'welcome' : 'Thanks for signed up'}</h2>
                 </div>
             </div>
             <div className={`animate size-60 md:size-80 rounded-full border-2 ${isSigninView ? 'border-[#7804ec]' : 'border-[#0405ec]'} fixed -top-10 left-1/2 -z-20`}></div>
