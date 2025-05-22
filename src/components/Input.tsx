@@ -70,12 +70,12 @@ export default function Input({labelName, labelFor, inputType, inputName, getInp
             <input ref={customInput} className={`w-full pl-3 ${inputName.includes('password') ? 'pr-16 sm:pr-20' : 'pr-3'} py-2 border-1 border-[#ffffff80] focus:border-white rounded-md outline-none`} type={type} name={inputName} id={labelFor} onFocus={() => setIsSelected(true)} onBlur={() => setIsSelected(false)} onChange={getValue} autoComplete="off"/>
             {inputName.includes('password') &&
             <div className="absolute right-2 top-1/2 -translate-y-1/2 flex gap-2">
-                <button type="button" aria-label="password visibility" onClick={() => setType(type === 'password' ? 'text' : 'password')} className="w-fit">
+                <button type="button" aria-label="password visibility" onClick={() => setType(type === 'password' ? 'text' : 'password')} className="w-fit rounded-sm">
                     <ButtonIcon iconType={type}/>
                 </button>
                 {inputName === 'signup_password_field' &&
                 <>
-                    <button type="button" aria-label="password info" className="w-fit info-btn" id="passwordInfo">
+                    <button type="button" aria-label="password info" className="w-fit info-btn rounded-sm" id="passwordInfo">
                         <ButtonIcon iconType="info" customClass={infoColor}/>
                     </button>
                     <Popover isActive={isActivePopover} value={value} getInfoStatus={handleInfoStatus}/>

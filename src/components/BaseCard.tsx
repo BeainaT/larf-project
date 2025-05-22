@@ -99,8 +99,8 @@ export default function BaseCard({toggleWiew, responseForm}: MyComponentProps) {
                     {isSigninView && <span className="text-base sm:text-lg text-end">SIGN<br/>UP</span>}
                     {!isSigninView && <span className="text-base sm:text-lg text-end">SIGN<br/>IN</span>}
                 </button>
-                <h2 className="text-2xl sm:text-4xl mt-5 mb-10 w-fit">{isSigninView ? 'SIGN IN' : 'SIGN UP'}</h2>
-                <form onSubmit={resForm} className={`flex flex-col gap-8 sm:gap-10 ${isSigninView ? 'h-[300px] sm:h-[400px] justify-center' : 'h-fit justify-center'}`}>
+                <h2 className={`text-2xl sm:text-4xl mb-10 ${isSigninView ? 'mt-8' : ' mt-5'}`}>{isSigninView ? 'SIGN IN' : 'SIGN UP'}</h2>
+                <form method="POST" onSubmit={resForm} className={`flex flex-col gap-8 sm:gap-10 ${isSigninView ? 'h-[300px] sm:h-[400px] justify-center' : 'h-fit justify-center'}`}>
                     {isSigninView &&
                     <>
                         <Input labelName="EMAIL" labelFor="signInEmail" inputType="text" inputName="signin_email_field" getInputValue={handleInputValue} isSentForm={isFormSubmitted} error={formErrors.signin_email_field}/>

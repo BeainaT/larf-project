@@ -40,15 +40,20 @@ body {
             .overlay {
                 background: linear-gradient(180deg, black 10%, transparent 30%);
             }
-            label {
-                /* font-size: clamp(1rem, 0.9661rem + 0.1695vw, 1.125rem); */
-            }
             h2,button {
                 font-weight: bold;
             }
         }
         button {
             cursor: pointer;
+        }
+        button:focus {
+            outline-color: inherit;
+            outline-width: 1px;
+            outline-style: solid;
+        }
+        button.switch-btn {
+            outline: none;
         }
         button:disabled {
             cursor: default;
