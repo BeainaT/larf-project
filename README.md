@@ -1,8 +1,32 @@
-<<<<<<< HEAD
-# larf-project
-Just a login and registration form idea
-=======
-# React + TypeScript + Vite
+# Registration & Login Card Demo
+
+**EN**: A quick UI/UX demo of a registration and login card for a hypothetical app. Built with **React + TypeScript + CSS and Vite**, focused on design and interactivity.
+
+**IT**: Una demo veloce di UI/UX per una card di registrazione e login per un’ipotetica app. Realizzata con **React + TypeScript + CSS e Vite**, con focus su design e interattività.
+
+## Features / Funzionalità
+
+**EN**: Login and registration card (UI only, no data saved). Responsive design with simple animations
+
+**IT**: Card di login e registrazione (solo UI, i dati non vengono salvati). Design responsive con animazioni semplici
+
+## Run / Avvio
+
+`npm install`
+
+`npm run dev`
+
+**EN**: Open http://localhost:5173 in your browser to try the demo
+
+**IT**: Apri http://localhost:5173 nel browser per provare la demo
+
+## Purpose / Scopo
+
+**EN**: Portfolio-ready UI demo to showcase an elegant and functional login card
+
+**IT**: Demo UI pronta per il portfolio per mostrare una card di login elegante e funzionale
+
+## React + Vite setup
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
